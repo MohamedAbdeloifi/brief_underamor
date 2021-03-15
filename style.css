@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.first-containe {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+#img1{
+    width: 100%;
+   padding: 50px;
+}
+.text-et-btn-top{
+   
+   margin-left: 60%;
+   margin-top: -23%;
+   
+}
+
+.h2-du-top{
+    font-size: 100px;
+    color: rgb(29, 29, 29);
+}
+.parra-du-top{
+    font-size: 35px;
+}
+
+
+.btn-top{
+    width: 280px;
+    height: 70px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px;
+    background-color:black ;
+    color: white;
+    border-radius: 9px;
+    transition: 0.5s ease-in-out;
+    border: none;
+    
+}
+.btn-top:hover{
+     background-color:rgb(255, 255, 255);
+     color: rgb(0, 0, 0);
+     transition: 0.5s ease-in-out;
+}
