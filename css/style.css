@@ -2,9 +2,63 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-header p{
+#presentation{
+    background-color: black;
     color: #A6A6A6;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#container-pub{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+} 
+
+#container-pub p{
+    color: #fff;
     text-transform: uppercase;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#presentation a, #country-button{
+    text-decoration: none;
+    color: #ccc;
+    width: 10%;
+    height: 25px;
+    margin: 5px;
+}
+
+#countries{
+    margin: 5px;
+}
+
+#country-button{
+    text-transform: uppercase;
+}
+
+#country-button img{
+    width: 20px;
+    height: 20px;
+}
+
+#countries ul{
+    display: none;
+}
+
+.fa-caret-down{
+    color:#ccc;
+    width: 5px;
+    height: 5px;
+}
+
+svg{
+    width: 55px;
+    height: 33px;
 }
