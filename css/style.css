@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #F0F0F0;
+    border-bottom: 5px solid black;
+    height: 500px;
+    padding: 60px;
+}
