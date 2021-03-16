@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+    font-size: small;
 }
 
 #presentation{
@@ -17,7 +18,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 65%;
 } 
 
 #container-pub p{
@@ -44,8 +44,9 @@
 }
 
 #country-button img{
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 13px;
+    margin: 0px 5px;
 }
 
 #countries ul{
@@ -58,7 +59,38 @@
     height: 5px;
 }
 
-svg{
+#icon-ualogo{
     width: 55px;
     height: 33px;
+}
+
+#icon-bag{
+    width: 30px;
+    height: 30px;
+}
+
+#navbar{
+    width: 100%;
+    height: 100px;
+    display: inline-flex;
+    padding: 10px;
+}
+
+#navbar h1{
+    width: 20%;
+}
+
+#navbar nav{
+    display: flex;
+    justify-content: space-between;
+    width:80%;
+}
+
+#navbar ul{
+    display: inline-flex;
+}
+
+#navbar nav ul li{
+    list-style-type: none;
+    margin: 5px;
 }
