@@ -6,7 +6,22 @@
 
 footer {
     background-color: #F0F0F0;
-    border-bottom: 5px solid black;
-    height: 500px;
+    border-top: 5px solid black;
     padding: 60px;
+}
+
+img {
+    border-radius: 10%;
+}
+
+.footer-mid {
+    display: flex;
+}
+
+#livraison  {
+    cursor: pointer;
+}
+
+#livraison li:hover {
+    color: red;
 }
