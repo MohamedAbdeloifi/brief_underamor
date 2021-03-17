@@ -39,21 +39,32 @@
 
 #countries{
     margin: 5px;
+    position: relative;
 }
 
 #country-button{
     text-transform: uppercase;
 }
 
-#country-button img{
+#country-button img, #countries ul li img{
     width: 18px;
     height: 13px;
     margin: 0px 5px;
 }
 
-#countries ul{
-    display: none;
+#countries li{
+    list-style-type: none;
 }
+
+#countries ul{
+    /* display: none; */
+    position: absolute;
+    right: -63px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff;
+    z-index: 99;
+} 
 
 .fa-caret-down{
     color:#ccc;
@@ -99,6 +110,10 @@
     margin: 10px;
 }
 
+#navbar nav ul li:first-child{
+    color: #D01921;
+}
+
 #navbar label, #navbar input{
     display: flex;
     margin: 0 auto;
@@ -106,23 +121,29 @@
 
 #search{
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
     height: 30px;
-    position: absolute;
-    right: 15px ;
+        /* position: absolute;
+        right: 50px; */
 }
 
-#search input{
+#input-container{
+    margin: 10px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#input-container input{
     padding: 7px;
 }
 
-#search .fa-search{
+#input-container .fa-search{
     border: 1px solid black;
-    padding: 5px;
+    padding: 9px;
 }
 
 #search img{
     width: 30px;
     height: 30px;
+    margin: 0 20px;
 }
