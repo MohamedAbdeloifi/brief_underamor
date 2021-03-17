@@ -16,10 +16,9 @@
     
     <footer>
         <div class="footer-top">
-            
-            <form action="#" >
-                    <label for="name">Inscris-toi et reçois nos e-mails</label>
-                    <input type="email" name="mail" id="mail" placeholder="Entre ton adresse e-mail" >
+            <form action="#" method="GET" class="footer-form">
+                    <label for="email">Inscris-toi et reçois nos e-mails</label>
+                    <input type="email" name="email" id="email" placeholder="Entre ton adresse e-mail" >
                     <button class="form_btn">RECEVOIR NOS E-MAILS</button>      
             </form>
             <div class="mapmyrun">
@@ -29,34 +28,34 @@
         </div>   
 
         <div class="footer-mid">
-            <div class="footer-mid-column">
-                <ul id="livraison">
+            <div class="footer-mid-column 1">
+                <ul id="livraison" class="footer-mid-text">
                     <li>Point de vente</li>
                     <li>Suivre une commande</li>
                 </ul>
             </div>
-            <div class="footer-mid-column">
+            <div class="footer-mid-column 2">
                 <h3>Contact</h3>
                   <ul>
                       <li>
-                          <p>Chat live</p>
+                          <p class="footer-mid-text">Chat live</p>
                           <p>Lundi - Vendredi 8:00 - 22:00</p>
                           <p>Samedi & Dimanche 9:00 - 22:00</p>
                       </li>
                       <li>
-                          <p>Assistance téléphonique</p>
-                          <p>00800-82766871</p>
+                          <p class="footer-mid-text">Assistance téléphonique</p>
+                          <p class="footer-mid-link">00800-82766871</p>
                           <p>Du lundi au vendredi, 9:00 - 18:00</p>
                       </li>
                       <li>
-                          <p>Email</p>
-                          <p>customerservice.fr@ underarmour.com</p>
+                          <p class="footer-mid-text">Email</p>
+                          <p class="footer-mid-link">customerservice.fr@ underarmour.com</p>
                       </li>
                   </ul>
             </div>
-            <div class="footer-mid-column">
+            <div class="footer-mid-column 3">
                 <h3>Service Clients</h3>
-                <ul>
+                <ul class="footer-mid-link">
                     <li>Informations d’expédition</li>
                     <li>Retours</li>
                     <li>FAQ</li>
@@ -64,15 +63,19 @@
                     <li>Plan du site</li>
                 </ul>
             </div>
-            <div class="footer-mid-column">
+            <div class="footer-mid-column 4">
                 <h3>Infos Sur L’entreprise</h3>
-                   <ul>
+                   <ul class="footer-mid-link">
                        <li>Affiliés</li>
                        <li>Carrières</li>
                        <li>Notre histoire</li>
                        <li>Offre étudiants</li>
                    </ul>
             </div>
+        </div>
+
+        <div class="footer-bot">
+            <p>© 2021 Under Armour, Inc. Tous droits réservés. <span class="footer-bot-link">Conditions générales</span>  |  <span class="footer-bot-link">Politique de confidentialité </span>  |  <span class="footer-bot-link">Politique en matière de cookies</span>  |  <span class="footer-bot-link">Paramètres de cookies</span></p>
         </div>
     </footer>
 </body>
