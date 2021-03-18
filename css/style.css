@@ -40,6 +40,7 @@
 #countries{
     margin: 5px;
     position: relative;
+    cursor: default;
 }
 
 #country-button{
@@ -54,14 +55,24 @@
 
 #countries li{
     list-style-type: none;
+    padding: 8px 0px;
+    color: black;
+}
+
+#countries ul li:last-child{
+    text-transform: uppercase;
+    text-align: center;
+    border-top: 1px solid #F0F0F0;
+    padding: 10px;
+    font-weight: 600;
 }
 
 #countries ul{
-    /* display: none; */
+    display: none;
     position: absolute;
     right: -63px;
-    padding: 10px;
-    margin: 10px;
+    padding: 12px;
+    margin: 15px;
     background-color: #fff;
     z-index: 99;
 } 
@@ -84,19 +95,20 @@
 }
 
 #navbar{
-    width: 100%;
-    height: 70px;
-    display: inline-flex;
+    height: 60px;
     padding: 10px;
-    position: relative;
-}
-
-#navbar h1{
-    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    border-bottom: 1px solid #F0F0F0;
 }
 
 #navbar nav{
     display: flex;
+    display: grid;
+    grid-template-columns: 70% 20%;
 }
 
 #navbar ul{
@@ -104,46 +116,72 @@
 }
 
 #navbar nav ul li{
+    cursor: default;
     list-style-type: none;
     text-transform: uppercase;
     font-weight:800;
-    margin: 10px;
+    margin: 5px 10px;
 }
 
-#navbar nav ul li:first-child{
+#nouveaute{
     color: #D01921;
-}
-
-#navbar label, #navbar input{
-    display: flex;
-    margin: 0 auto;
 }
 
 #search{
     display: flex;
     height: 30px;
-        /* position: absolute;
-        right: 50px; */
 }
 
 #input-container{
-    margin: 10px 50px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #input-container input{
-    padding: 7px;
+    padding: 8px;
+    border: 1px solid #F0F0F0;
 }
 
 #input-container .fa-search{
-    border: 1px solid black;
     padding: 9px;
+    border: 1px solid #F0F0F0;
+    border-left: none;
 }
 
 #search img{
     width: 30px;
     height: 30px;
-    margin: 0 20px;
+    margin: 0px 20px;
+}
+
+.active{
+    display: block !important;
+}
+
+.container-nouveaute{
+    position: absolute;
+    top: 125px;
+    color: #1d1d1d;
+    width: 100vw;
+    height: 200px;
+    background-color: red;
+}
+
+@media screen and (max-width: 992px){
+    #input-container input{
+        display: none;
+    }
+    #input-container .fa-search{
+        border: none;
+    }
+    .fa-search{
+        font-size:x-large;
+    }
+}
+
+@media screen and (max-width: 767px){
+    #navbar nav ul{
+        display: none;
+    }
 }
