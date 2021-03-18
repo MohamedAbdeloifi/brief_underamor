@@ -1,4 +1,215 @@
 *{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    color: #000;
+    font-family: Arial,sans-serif;
+    font-size: 16px;
+    position: relative;
+    -webkit-text-size-adjust: none;
+    -webkit-transition: -webkit-transform 300ms;
+    -moz-transition: -moz-transform 300ms;
+    -ms-transition: -ms-transform 300ms;
+    -o-transition: -o-transform 300ms;
+    transition: transform 300ms;
+}
+
+.contenent-performant, .custom-navigation-module, .multiblock-main2 {
+    width: 100%;
+    margin: 10px auto;
+}
+
+.contenent-performant{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.block-performant button{
+  background-color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  padding: 7px 10px;
+  margin: 5px;
+  border-radius: 5px; 
+  font: Arial,sans-serif;
+  font-weight: bold;
+}
+
+
+
+.texte-performant,  .contenent-courir{
+        width: 96%;
+        padding: 10px 0;
+        text-align: center;
+        display: block;
+        font-size: 18px;
+        color: #1d1d1d;
+        font-family: Arial,Helvetica,sans-serif;
+        font-weight: 400;
+        line-height: 1;
+        text-transform: none;
+}
+
+.contenent-courir{
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.multiblock-main2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* cursor: pointer; */
+        width: 100%;
+        margin-top: 25px;
+}
+
+.block-reign3, .block-esprit, .block-golf{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 33%;
+    height: 700px;
+    margin: 10px auto;
+}
+
+.block-esprit img, .block-reign3 img, .block-golf img{
+    width: 100%;
+    height: 275px;
+}
+
+/*.image-reign3, .image-esprit, .image-golf{
+    width: 100%;
+    height: 200px; 
+}*/
+ 
+.custom-navigation-module{
+    display: flex;
+    justify-content: space-between;
+}
+
+.multiblock-reign3 h3, .multiblock-esprit h3,  .multiblock-golf h3 {
+    width: 100%;
+    font-size: 25px;
+    margin: 15px 0px 5px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.multiblock-reign3 p,  .multiblock-esprit p,  .multiblock-golf p {
+    color: #1d1d1d;
+    font-weight: 400px;
+    font-size: 78%;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+ }
+
+ .multiblock-reign3-cta, .multiblock-esprit-cta, .multiblock-golf-cta{
+     text-align: center;
+     display: none;
+ }
+
+
+.category-meilleur-vente, .category-tendances-homme, .category-tendances-femme, .category-tendances{
+    width: 100%;
+    text-align: center;
+    border-bottom: none;
+    display: block;
+    max-width: 90%;
+    margin-bottom: 20px
+}
+
+/*.title-meilleur-vente, .title-tendances-homme, .title-tendances-femme, .title-tendances{
+    display: block!important;
+    font-size: 16pt;
+    font-family: Arial,sans-serif;
+    font-weight: 400!important;
+}
+*/
+
+
+.category-meilleur-vente, .category-tendances-homme, .category-tendances-femme, .category-tendances{
+    width: 21%;
+    margin-top: -15%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    vertical-align: top;
+}
+
+.category-meilleur-vente ul li, .category-tendances-homme ul li, .category-tendances-femme ul li, .category-tendances ul li{
+    margin:20px 0px;
+}
+
+.content-meilleur-vente, .content-tendances-homme, .content-tendances-femme, .content-tendances{ 
+    width: 230px ;
+    height: 206px;
+}
+
+
+.custom-navigation-module li{
+    list-style-type: none;
+}
+
+
+
+/*----------------------*/
+
+
+@media screen and (max-width: 767px) /* 767*/{
+    .contenent-performant, .multiblock-main2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .block-performant{
+        display: flex;
+    }
+
+
+
+    .block-esprit, .block-reign3, .block-golf{
+        height: 667px;
+        width: 100%;
+        margin-bottom: -65%;
+    }
+
+
+    .custom-navigation-module{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+
+    }
+    .category-meilleur-vente, .category-tendances-homme, .category-tendances-femme, .category-tendances{
+        border: solid 1px;
+        overflow: hidden;
+        width: 100%;
+        margin-bottom: 55px;
+        
+
+    }
+
+    .content-meilleur-vente, .content-tendances-homme, .content-tendances-femme, .content-tendances{
+        display: none;
+    }
+
+
+
+
+
+
+=======
     margin: 0;
     padding: 0;
     box-sizing: border-box;
