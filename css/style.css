@@ -13,6 +13,7 @@ footer {
     border-top: 5px solid black;
     color: black;
     width: 100%;
+    position: relative;
 }
 /* end footer*/
 
@@ -27,6 +28,57 @@ footer {
 
 .footer-form {
     padding: 15px 0 39px;
+}
+
+.footer-top label {
+    font-size: 12px;
+    font-weight: 400;
+    margin-right: 3px;
+}
+
+.footer-top ::placeholder {
+    color: black;
+}
+
+#email:invalid {
+    background-color: red;
+}
+
+
+#email, .form_btn {
+    height: 44px;
+}
+
+#email {
+    width: 370px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 5px;
+}
+
+.form_btn {
+    background: #e51b24;
+    border: none;
+    color: #F0F0F0;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 4px;
+    min-height: 44px;
+    width: 160px;
+}
+
+.form_btn:hover {
+    background-color: #c01821;
+} 
+
+.form_btn span {
+    display: inline-block;
+    max-width: 70%;
+    font-weight: 550;
 }
 
 .mapmyrun img {
@@ -54,8 +106,13 @@ footer {
 }
 
 .footer-mid-link {
-    color: grey;
+    color: #5a5a5a;
     cursor: pointer;
+}
+
+.footer-mid-link:hover {
+    color: rgb(241, 45, 45);
+    transition: .4s;
 }
 
 h3 {
@@ -63,8 +120,24 @@ h3 {
 }
 
 .footer-mid li {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
+
+.footer-mid ul {
+    list-style-type: none;
+}
+
+.footer-mid-column {
+    padding: 0 80px 0;
+}
+
+.footer-mid-text {
+    font-weight: bolder;
+}
+
+
+
+
 /* end footer mid */
 
 
@@ -74,6 +147,9 @@ h3 {
 .footer-bot {
     font-size: 11px;
     width: auto;
+    padding-left: 50px;
+    padding-bottom: 60px;
+    color: rgb(83, 81, 81);
 }
 
 .footer-bot-link {
@@ -84,10 +160,20 @@ h3 {
     color: red;
 }
 
+
+
 /* end footer bot */
 
 
+@media screen and (max-width: 767px){
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 
+
+/* responsive */
 
 
