@@ -160,3 +160,54 @@ body {
 .custom-navigation-module li{
     list-style-type: none;
 }
+
+
+
+/*----------------------*/
+
+
+@media screen and (max-width: 767px) /* 767*/{
+    .contenent-performant, .multiblock-main2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .block-performant{
+        display: flex;
+    }
+
+
+
+    .block-esprit, .block-reign3, .block-golf{
+        height: 667px;
+        width: 100%;
+        margin-bottom: -65%;
+    }
+
+
+    .custom-navigation-module{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+
+    }
+    .category-meilleur-vente, .category-tendances-homme, .category-tendances-femme, .category-tendances{
+        border: solid 1px;
+        overflow: hidden;
+        width: 100%;
+        margin-bottom: 55px;
+        
+
+    }
+
+    .content-meilleur-vente, .content-tendances-homme, .content-tendances-femme, .content-tendances{
+        display: none;
+    }
+
+
+
+
+
+
+}
