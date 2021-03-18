@@ -5,8 +5,8 @@
 section {
   width: 100%;
 }
-body{
-    font-family: Arial, sans-serif;
+body {
+  font-family: Arial, sans-serif;
 }
 
 @media screen and (max-width: 781px) {
@@ -269,36 +269,38 @@ body{
     display: none;
   }
   .img-du-haut2 {
-    width: 100%;
+    width: 98.5%;
   }
 
-  .text-btn {
-    border: 1px solid;
-    position: absolute;
-   left: 70%;
-  
-    
-  }
   .first-container {
     margin-bottom: 80px;
-    
+    position: relative;
     width: 100%;
   }
   .h2-after-img {
-    font-size: 28px;
-  
+    font-size: 50px;
+    position: absolute;
+    top: 49%;
+    left: 60%;
+    color: #1d1d1d;
   }
   .para-after-img {
     font-size: 15px;
     padding-top: 26px;
-    
+    position: absolute;
+    top: 71%;
+    left: 60%;
   }
   .les-btns {
-    
-    padding-top: 25px;
+    padding-top: 5px;
     display: flex;
     flex-wrap: wrap;
-    
+    position: absolute;
+    top: 83%;
+    left: 60%;
+
+    height: 120px;
+    overflow: hidden;
   }
   .btn1 {
     width: 185px;
@@ -330,16 +332,14 @@ body{
 } */
 
   .para-deuxieme-container {
-    font-size: 18px;
+    font-size: 25px;
     text-align: center;
   }
 
   .h2-deuxieme-container {
-    font-size: 30px;
-    font-weight: 900;
-    padding: 7px;
+    font-size: 46px;
+
     text-align: center;
-    font-family: Georgia, "Times New Roman", Times, serif;
   }
   .les-btn2 {
     display: flex;
@@ -349,7 +349,17 @@ body{
   }
 
   .btn2 {
-    border: 1px solid;
+    font-family: Armour_W_Bd, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #1d1d1d;
+    border: 2px solid #1d1d1d;
+    padding: 11.5px 20px;
+    margin: 10px 8px 0;
+    border-radius: 4px;
+    margin-bottom: 75px;
+    background-color: white;
+    /* border: 1px solid;
     background-color: white;
     font-weight: bold;
     width: 70px;
@@ -357,11 +367,11 @@ body{
     height: 28px;
     margin: 5px;
     font-size: 10px;
-    transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out; */
   }
   .btn2:nth-child(3) {
-    width: 160px;
-    height: 30px;
+    width: 180px;
+    height: 50px;
   }
   .btn2:hover {
     background-color: rgb(0, 0, 0);
@@ -370,8 +380,8 @@ body{
   }
   /*-----------------------------------------------*/
   .img-premieres .firts-img {
-    width: 100%; 
-    
+    width: 100%;
+
     height: 0 auto;
   }
 
@@ -395,7 +405,7 @@ body{
   }
   .les-images {
     width: 48%;
-    
+
     margin-right: 10px;
   }
 
@@ -522,33 +532,30 @@ body{
     /* margin-left: 10px; */
   }
   /*--------------------------------------------------*/
-#img-des-hover {
-      position: relative;
-     
+  #img-des-hover {
+    position: relative;
+
     width: 100%;
     height: auto;
     padding: 0;
-    
-}
+  }
 
-
-
-.btn-hover{
-     transition: 0.4s ease-in-out;
-     position: absolute; 
-     display: none;
+  .btn-hover {
+    transition: 0.4s ease-in-out;
+    position: absolute;
+    display: none;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-     background-color: rgba(39, 36, 36, 0.507);
-     transition: 0.5s ease-in-out;
-}
-.btn-les-images-hover{
+    background-color: rgba(39, 36, 36, 0.507);
+    transition: 0.5s ease-in-out;
+  }
+  .btn-les-images-hover {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 190px;
     height: 45px;
     font-size: 12px;
@@ -558,30 +565,23 @@ body{
     border: 1px solid white;
     border-radius: 3px;
     transition: 0.5s ease-in-out;
-}
-.btn-les-images-hover:hover{
+  }
+  .btn-les-images-hover:hover {
     background-color: rgb(255, 253, 253);
-     color: rgb(0, 0, 0);
-     transition: 0.5s ease-in-out;
-}
-.img-premieres:hover .btn-hover {
+    color: rgb(0, 0, 0);
+    transition: 0.5s ease-in-out;
+  }
+  .img-premieres:hover .btn-hover {
     display: block;
     transition: 0.5s ease-in-out;
-}
-.img-deuxieme:hover .btn-hover {
+  }
+  .img-deuxieme:hover .btn-hover {
     display: block;
-}
-.img-troisieme:hover .btn-hover {
+  }
+  .img-troisieme:hover .btn-hover {
     display: block;
-}
-.img-quatrieme:hover .btn-hover {
+  }
+  .img-quatrieme:hover .btn-hover {
     display: block;
-}
-
-
-
-  
-  
-
-  
+  }
 }
