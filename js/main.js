@@ -1,3 +1,4 @@
+
 var acc = document.querySelectorAll(".content-meilleur-vente, .content-tendances-homme, .content-tendances-femme, .content-tendances");
 var i;
 
@@ -16,3 +17,26 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 } 
+var flags = document.querySelector('#countries ul');
+
+var countries  = document.getElementById("countries");
+
+countries.addEventListener("mouseover",()=>{
+    flags.classList.toggle("active") 
+})
+
+countries.addEventListener("mouseout",()=>{
+    flags.classList.toggle("active") 
+})
+var nouveaute = document.getElementById("nouveaute");
+var div = document.createElement("div");
+div.classList.add("container-nouveaute");
+div.innerHTML += `<ul><li>HOMMES NOUVEAUTÉS</li><li>FEMMES NOUVEAUTÉS</li><li>ENFANTS NOUVEAUTÉS</li></ul>`;
+
+nouveaute.addEventListener("mouseover",()=>{
+    nouveaute.appendChild(div);
+})
+div.addEventListener("mouseout",()=>{
+    nouveaute.removeChild(div);
+})
+
